@@ -21,11 +21,10 @@ char* maping(DIM *dim)
     char ** M = malloc(D[0]*sizeof(char));
     for(i=0;i<D[0];i++)
     {
-        M[i]=malloc(D[1]*sizeof(char));
+        M[i]=malloc((D[1])*sizeof(char));
         for(j=0;j<D[1];j++)
         {
             M[i][j] = fgetc(F);
-            //printf("%c",M[i][j]);
         }
         fgetc(F);
 
