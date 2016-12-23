@@ -1,0 +1,6 @@
+1 Roucoul Air 1 5
+2 Chenipan Terre 1 5
+3 Roucoups Air 2 10
+4 Carapuce Eau 1 5
+5 Chenipan Terre 1 5
+6 Dracaufeu Feu 3 15
