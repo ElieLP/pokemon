@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Carte.h"
+
+
 
 int main()
 {
-    printf("Hello world!\n");
+    char* carte= NULL;
+    carte = maping();
+//    affichercarte();
     return 0;
 }

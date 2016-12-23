@@ -1,5 +1,18 @@
 # depslib dependency file v1.0
-1446667744 source:c:\users\monpc\documents\projet\pokemon\pokemon\main.c
+1482454834 source:c:\users\monpc\documents\projet\pokemon\pokemon\main.c
 	<stdio.h>
 	<stdlib.h>
+	"Carte.h"
+
+1482455169 source:c:\users\monpc\documents\projet\pokemon\pokemon\carte.c
+	<stdio.h>
+	<stdlib.h>
+	"Carte.h"
+
+1482449515 c:\users\monpc\documents\projet\pokemon\pokemon\carte.c
+	<stdio.h>
+	<stdlib.h>
+	"Carte.h"
+
+1482450797 c:\users\monpc\documents\projet\pokemon\pokemon\carte.h
 
