@@ -24,6 +24,7 @@ char* maping(DIM *dim)
         for(j=0;j<D[1];j++)
         {
             M[i][j] = fgetc(F);
+            //printf("%c",M[i][j]);
         }
         fgetc(F);
 
