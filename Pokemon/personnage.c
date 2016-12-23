@@ -2,34 +2,28 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <conio.h>
-#define MAX 10
+#include "Carte.h"
 
-char laby[MAX][MAX] = {
-"**********",
-"* *      *",
-"* ****** *",
-"*        *",
-"* **** ***",
-"*    *   *",
-"* ** *** *",
-"* ********",
-"*        *",
-"**********"
-};
+char ** CARTE = NULL;
+DIM DIMENSIONS;
+
+void initMap(){
+    CARTE = maping(&DIMENSIONS);
+}
 
 void Afficher(int x,int y)
 {
     system("cls");
     int i,j;
-    for(i=0;i<MAX;i++)
+    for(i=0;i<DIMENSIONS.colonnes;i++)
     {
-        for(j=0;j<MAX;j++)
+        for(j=0;j<DIMENSIONS.lignes;j++)
         {
             printf(" ");
             if (i==x && j==y)
                 printf("X");
             else
-                printf("%c",laby[i][j]);
+                printf("%c",CARTE[i][j]);
         }
         printf("\n");
     }
@@ -37,7 +31,7 @@ void Afficher(int x,int y)
 
 void deplacer(int* x,int* y,int vx,int vy)
 {
-    if (laby[*x+vx][*y+vy]=='*')
+    if (CARTE[*x+vx][*y+vy]=='#')
     {
         return;
     } else {

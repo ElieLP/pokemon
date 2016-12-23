@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <conio.h>
+#include "Carte.h"
 #define MAX 10
 
 int main()
 {
+    initMap();
     int x,y;  // position joueur
     int touche;
     x = y = 1;
@@ -32,4 +34,5 @@ int main()
         }
     }
     return 0;
+
 }

@@ -34,11 +34,16 @@
 		<Unit filename="Carte.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Carte.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="personnage.c">
 			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pokemons.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Extensions>
 			<code_completion />
