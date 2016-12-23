@@ -10,11 +10,7 @@ char* maping(DIM *dim)
     char* F = NULL;
     int D[2];
     F = fopen("Map.txt.txt","r");
-    for(i=0;i<100;i++)
-    {
-        printf("%c",fgetc(F));
-    }
-    /*if(F==NULL){
+    if(F==NULL){
         printf("La carte ne s'est pas ouverte.");
         exit(1);
 
@@ -29,6 +25,7 @@ char* maping(DIM *dim)
         for(j=0;j<D[1];j++)
         {
             M[i][j] = fgetc(F);
+            //printf("%c",M[i][j]);
         }
         fgetc(F);
 
@@ -48,7 +45,7 @@ char* maping(DIM *dim)
     fclose(F);
     dim->lignes = D[0];
     dim->colonnes = D[1];
-//    return M;
+    return M;
 }
 
 
