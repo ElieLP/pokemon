@@ -1,7 +1,7 @@
 #ifndef CARTE_H_INCLUDED
 #define CARTE_H_INCLUDED
 
-char* maping();
+char** maping();
 
 void affichercarte();
 

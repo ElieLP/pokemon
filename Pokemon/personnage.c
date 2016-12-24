@@ -15,9 +15,10 @@ void Afficher(int x,int y)
 {
     system("cls");
     int i,j;
-    for(i=0;i<DIMENSIONS.colonnes;i++)
+
+    for(i=0;i<DIMENSIONS.lignes;i++)
     {
-        for(j=0;j<DIMENSIONS.lignes;j++)
+        for(j=0;j<DIMENSIONS.colonnes;j++)
         {
             printf(" ");
             if (i==x && j==y)
@@ -27,6 +28,7 @@ void Afficher(int x,int y)
         }
         printf("\n");
     }
+    printf("\nq : quitter \no,k,l,m : se deplacer");
 }
 
 void deplacer(int* x,int* y,int vx,int vy)

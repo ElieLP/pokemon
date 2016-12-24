@@ -3,14 +3,17 @@
 #include <windows.h>
 #include <conio.h>
 #include "Carte.h"
-#define MAX 10
 
 int main()
 {
+    int i,j;
+    printf("\a");
+    DIM dim;
+    char ** map = maping(&dim);
     initMap();
     int x,y;  // position joueur
     int touche;
-    x = y = 1;
+    x = y = 2;
     touche = 0;
     while(touche!='q')
     {
