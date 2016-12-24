@@ -3,8 +3,6 @@
 
 char** maping();
 
-void affichercarte();
-
 typedef struct
 {
     int lignes;
@@ -20,10 +18,13 @@ typedef struct
 typedef struct
 {
     int id;
-    char* espece;
+    char* nom;
     char* element;
     int force;
     int pv;
-}pokemon;
+}
+
+coordonnes genPokemon(char** CARTE);
+
 
 #endif // CARTE_H_INCLUDED

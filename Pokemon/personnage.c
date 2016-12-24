@@ -15,7 +15,10 @@ void Afficher(int x,int y)
 {
     system("cls");
     int i,j;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 79bb2e471d5feafd0811b976ebf9c78e61881d55
     for(i=0;i<DIMENSIONS.lignes;i++)
     {
         for(j=0;j<DIMENSIONS.colonnes;j++)

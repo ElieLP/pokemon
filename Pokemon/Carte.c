@@ -15,7 +15,6 @@ char** maping(DIM *dim)
     };
     fscanf(F,"%d %d ",&dim->lignes,&dim->colonnes);
     printf("Il y a %d lignes et %d colonnes \n",dim->lignes,dim->colonnes);
-   // char M[D[0]][D[1]];
     char **M = malloc(dim->lignes*sizeof(char *));
     for(i=0;i<dim->lignes;i++)
     {
@@ -24,14 +23,9 @@ char** maping(DIM *dim)
         {
             M[i][j] = fgetc(F);
             printf(" ");
-            printf("%c",M[i][j]);
         }
-        printf("\n");
         fgetc(F);
     }
     fclose(F);
     return M;
 }
-
-
-//void affichercarte()

@@ -7,7 +7,6 @@
 int main()
 {
     int i,j;
-    printf("\a");
     DIM dim;
     char ** map = maping(&dim);
     initMap();
