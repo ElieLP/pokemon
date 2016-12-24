@@ -13,10 +13,9 @@ char* maping(DIM *dim)
     if(F==NULL){
         printf("La carte ne s'est pas ouverte.");
         exit(1);
-
     };
     fscanf(F,"%d %d ",&D[0],&D[1]);
-    printf("Il y a %d lignes et %d colones \n",D[0],D[1]);
+    printf("Il y a %d lignes et %d colonnes \n",D[0],D[1]);
    // char M[D[0]][D[1]];
     char ** M = malloc(D[0]*sizeof(char));
     for(i=0;i<D[0];i++)
@@ -29,7 +28,7 @@ char* maping(DIM *dim)
         fgetc(F);
 
     }
-/*    for(i=0;i<D[0];i++)
+   /* for(i=0;i<D[0];i++)
     {
         for(j=0;j<D[1];j++)
         {
@@ -37,7 +36,7 @@ char* maping(DIM *dim)
         }
         printf("\n");
     }
-    /*for(i=0;i<100;i++)
+    for(i=0;i<100;i++)
     {
         printf("%c",F[i]);
     }*/

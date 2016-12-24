@@ -3,12 +3,19 @@
 
 char* maping();
 
-void affichercarte();
-
 typedef struct
 {
     int lignes;
     int colonnes;
 }DIM;
+
+typedef struct
+{
+    int x;
+    int y;
+}coordonnes;
+
+coordonnes genPokemon(char** CARTE);
+
 
 #endif // CARTE_H_INCLUDED
