@@ -17,7 +17,7 @@
 	<stdlib.h>
 	"Carte.h"
 
-1482536792 c:\users\monpc\documents\projet\pokemon\pokemon\carte.h
+1482539578 c:\users\monpc\documents\projet\pokemon\pokemon\carte.h
 
 1482534740 source:c:\users\patrick\documents\projet\pokemon\pokemon\carte.c
 	<stdio.h>
@@ -47,5 +47,11 @@
 	<conio.h>
 	"Carte.h"
 
-1482535831 source:c:\users\monpc\documents\projet\pokemon\pokemon\pokemons.c
+1482539600 source:c:\users\monpc\documents\projet\pokemon\pokemon\pokemons.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	"Carte.h"
+	<time.h>
 

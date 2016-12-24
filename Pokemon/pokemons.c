@@ -5,16 +5,14 @@
 #include "Carte.h"
 #include <time.h>
 
-coordonnes genPokemon(char** CARTE)
+coordonnes genPokemon(char** CARTE, DIM dim)
 {
     coordonnes coord;
-    DIM dim;
-    int i = 0;
     srand(time(NULL));
     coord.x = rand()%dim.colonnes;
     coord.y = rand()%dim.lignes;
-    if(CARTE[coord.x][coord.y] == "#"){
-        return genPokemon(CARTE);
+    if((CARTE[coord.x][coord.y] == "#") || (CARTE[coord.x][coord.y] == "X")){
+        return genPokemon(CARTE,dim);
     }
     else return coord;
 }
