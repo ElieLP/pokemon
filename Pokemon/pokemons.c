@@ -16,3 +16,5 @@ coordonnes genPokemon(char** CARTE, DIM dim)
     }
     else return coord;
 }
+
+

@@ -1,8 +1,6 @@
 #ifndef CARTE_H_INCLUDED
 #define CARTE_H_INCLUDED
 
-char* maping();
-
 typedef struct
 {
     int lignes;
@@ -15,8 +13,15 @@ typedef struct
     int y;
 }coordonnes;
 
-coordonnes genPokemon(char** CARTE,DIM);
+typedef struct
+{
+    int id;
+    char* nom;
+    char* element;
+    int force;
+    int pv;
+}pokemon;
 
-
+coordonnes genPokemon(char** CARTE,DIM dim);
 
 #endif // CARTE_H_INCLUDED

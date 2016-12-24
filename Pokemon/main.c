@@ -3,10 +3,12 @@
 #include <windows.h>
 #include <conio.h>
 #include "Carte.h"
-#include <time.h>
 
 int main()
 {
+    int i,j;
+    DIM dim;
+    char ** map = maping(&dim);
     initMap();
     int x,y;  // position joueur
     int touche;

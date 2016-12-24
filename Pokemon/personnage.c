@@ -29,6 +29,7 @@ void Afficher(int x,int y)
     }
     coordonnes pok = genPokemon(CARTE,DIMENSIONS);
     printf("%d %d ",pok.x,pok.y);
+    printf("\nq : quitter \no,k,l,m : se deplacer");
 }
 
 void deplacer(int* x,int* y,int vx,int vy)
