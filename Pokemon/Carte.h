@@ -22,7 +22,7 @@ typedef struct
     int pv;
 }pokemon;
 
-coordonnes genPokemon(char**,DIM);
+void genPokemon();
 
 pokemon* typing();
 

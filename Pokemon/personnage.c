@@ -7,17 +7,30 @@
 char ** CARTE = NULL;
 DIM DIMENSIONS;
 pokemon *pokemons;
-int taille;
+int tailleListe;
 
 void initMap(){
     CARTE = maping(&DIMENSIONS);
-    pokemons = typing(&taille);
+    pokemons = typing(&tailleListe);
+}
+
+void genPokemon()
+{
+    int a,b;
+    a = b = 0;
+    srand(time(NULL));
+    while((CARTE[b][a] == '#') || (CARTE[b][a] == 'X')){
+        a = rand()%DIMENSIONS.colonnes;
+        b = rand()%DIMENSIONS.lignes;
+    }
+    //printf("%d %d", a , b);
+    CARTE[b][a] = '*';
 }
 
 void Afficher(int x,int y)
 {
     system("cls");
-    int i,j,k;
+    int i,j;
     for(i=0;i<DIMENSIONS.lignes;i++)
     {
         for(j=0;j<DIMENSIONS.colonnes;j++)
@@ -31,10 +44,7 @@ void Afficher(int x,int y)
         printf("\n");
     }
     printf("\nq : quitter \no,k,l,m : se deplacer");
-    for (k=0;k<6;k++){
-        printf("%s ",pokemons[k].nom);
-    }
-    printf("%d",taille);
+
 }
 
 void deplacer(int* x,int* y,int vx,int vy)

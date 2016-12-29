@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include "Carte.h"
+#include <time.h>
 
 int main()
 {
@@ -13,6 +14,8 @@ int main()
     while(touche!='q')
     {
         Afficher(x,y);
+        srand(time(NULL));
+        if(rand()%10==1){genPokemon();}
         touche = getch();
         switch(touche)
         {
