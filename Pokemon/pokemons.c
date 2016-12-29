@@ -7,14 +7,17 @@
 
 coordonnes genPokemon(char** CARTE, DIM dim)
 {
+    int a,b;
     coordonnes coord;
     srand(time(NULL));
-    coord.x = rand()%dim.colonnes;
-    coord.y = rand()%dim.lignes;
-    if((CARTE[coord.x][coord.y] == "#") || (CARTE[coord.x][coord.y] == "X")){
-        return genPokemon(CARTE,dim);
+    a=0;
+    b=0;
+    while((CARTE[b][a] == '#') || (CARTE[b][a] == 'X')){
+        a = rand()%dim.colonnes;
+        b = rand()%dim.lignes;
     }
-    else return coord;
+        coord.x = a;
+        coord.y = b;
+        return coord;
 }
-
 
