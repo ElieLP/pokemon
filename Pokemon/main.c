@@ -3,6 +3,8 @@
 #include <conio.h>
 #include "Carte.h"
 
+coordonnes collection[256] = {7};
+
 int main()
 {
     initMap();

@@ -4,3 +4,4 @@
 4 Carapuce Eau 1 5
 5 Chenipan Terre 1 5
 6 Dracaufeu Feu 3 15
+7 Pikachu électricité 1 5

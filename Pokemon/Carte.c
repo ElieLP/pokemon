@@ -9,7 +9,7 @@ char** maping(DIM *dim)
     FILE *F = NULL;
     F = fopen("Map.txt.txt","r");
     if(F==NULL){
-        printf("La carte ne s'est pas ouverte.");
+        printf("La carte ne s'est pas ouverte."); // Verifie que F pointe sur quelque chose
         exit(1);
     }
     fscanf(F,"%d %d ",&dim->lignes,&dim->colonnes);
