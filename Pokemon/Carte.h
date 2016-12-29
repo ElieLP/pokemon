@@ -23,5 +23,8 @@ typedef struct
 }pokemon;
 
 coordonnes genPokemon(char**,DIM);
+
+pokemon* typing();
+
 char** maping(DIM *);
 #endif // CARTE_H_INCLUDED

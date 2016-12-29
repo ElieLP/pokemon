@@ -16,12 +16,12 @@ coordonnes genPokemon(char** CARTE, DIM dim)
         a = rand()%dim.colonnes;
         b = rand()%dim.lignes;
     }
-        coord.x = a;
-        coord.y = b;
-        return coord;
+    coord.x = a;
+    coord.y = b;
+    return coord;
 }
 
-struct pokemon* typing()
+pokemon* typing()
 {
     pokemon *liste;
     int i=0,j;
@@ -70,7 +70,7 @@ struct pokemon* typing()
         liste[j].element = pokemon[j][2];
         liste[j].force = atoi(pokemon[j][3]);
         liste[j].pv = atoi(pokemon[j][4]);
-        printf("%d %s %s %d %d ",liste[j].id,liste[j].nom,liste[j].element,liste[j].force,liste[j].pv);
+        //printf("%d %s %s %d %d ",liste[j].id,liste[j].nom,liste[j].element,liste[j].force,liste[j].pv);
         printf("\n");
     }
     return liste;
