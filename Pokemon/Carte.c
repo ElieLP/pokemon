@@ -6,13 +6,12 @@
 char** maping(DIM *dim)
 {
     int i,j;
-    char a;
-    char* F = NULL;
+    FILE *F = NULL;
     F = fopen("Map.txt.txt","r");
     if(F==NULL){
         printf("La carte ne s'est pas ouverte.");
         exit(1);
-    };
+    }
     fscanf(F,"%d %d ",&dim->lignes,&dim->colonnes);
     printf("Il y a %d lignes et %d colonnes \n",dim->lignes,dim->colonnes);
     char **M = malloc(dim->lignes*sizeof(char *));

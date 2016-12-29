@@ -1,18 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 #include <conio.h>
 #include "Carte.h"
 
 int main()
 {
-    int i,j;
-    DIM dim;
-    char ** map = maping(&dim);
     initMap();
     int x,y;  // position joueur
     int touche;
-    x = y = 2;
+    x = y = 1;
     touche = 0;
     while(touche!='q')
     {
@@ -36,5 +32,4 @@ int main()
         }
     }
     return 0;
-
 }
