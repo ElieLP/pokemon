@@ -27,9 +27,6 @@ void Afficher(int x,int y)
         }
         printf("\n");
     }
-    coordonnes pok;
-    pok=genPokemon();
-    printf("%d %d ",pok.x,pok.y);
     printf("\nq : quitter \no,k,l,m : se deplacer");
 }
 

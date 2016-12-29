@@ -76,7 +76,7 @@
 
 1483043454 c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\carte.h
 
-1483043454 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\main.c
+1483044091 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -95,5 +95,11 @@
 	<string.h>
 	"Carte.h"
 	<time.h>
+	<assert.h>
+
+1483043682 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\utils.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
 	<assert.h>
 
