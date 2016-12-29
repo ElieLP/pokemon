@@ -69,3 +69,31 @@
 	<string.h>
 	<assert.h>
 
+1483041750 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\carte.c
+	<stdio.h>
+	<stdlib.h>
+	"Carte.h"
+
+1483043454 c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\carte.h
+
+1483043454 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"Carte.h"
+
+1483042192 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\personnage.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	"Carte.h"
+
+1483043387 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\pokemons.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Carte.h"
+	<time.h>
+	<assert.h>
+

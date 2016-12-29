@@ -5,8 +5,10 @@
 
 int main()
 {
-    initMap();
-    int x,y;  // position joueur
+    coordonnes pok;
+    pok = genPokemon();
+    //initMap();
+    /*int x,y;  // position joueur
     int touche;
     x = y = 1;
     touche = 0;
@@ -30,7 +32,6 @@ int main()
         default:
             break;
         }
-    }
+    }*/
     return 0;
-
 }
