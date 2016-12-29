@@ -6,12 +6,9 @@
 
 char ** CARTE = NULL;
 DIM DIMENSIONS;
-pokemon *pokemons;
-int tailleListe;
 
 void initMap(){
     CARTE = maping(&DIMENSIONS);
-    pokemons = typing(&tailleListe);
 }
 
 void genPokemon()
@@ -52,6 +49,10 @@ void deplacer(int* x,int* y,int vx,int vy)
     if (CARTE[*x+vx][*y+vy]=='#')
     {
         return;
+    } else if (CARTE[*x+vx][*y+vy]=='*') {
+        if (demarrerCombat()==false);
+        (*x)+=vx;
+        (*y)+=vy;
     } else {
         (*x)+=vx;
         (*y)+=vy;
