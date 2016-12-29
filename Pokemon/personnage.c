@@ -7,10 +7,11 @@
 char ** CARTE = NULL;
 DIM DIMENSIONS;
 pokemon *pokemons;
+int taille;
 
 void initMap(){
     CARTE = maping(&DIMENSIONS);
-    pokemons = typing();
+    pokemons = typing(&taille);
 }
 
 void Afficher(int x,int y)
@@ -30,9 +31,10 @@ void Afficher(int x,int y)
         printf("\n");
     }
     printf("\nq : quitter \no,k,l,m : se deplacer");
-    for (k=0;k<5;k++){
+    for (k=0;k<6;k++){
         printf("%s ",pokemons[k].nom);
     }
+    printf("%d",taille);
 }
 
 void deplacer(int* x,int* y,int vx,int vy)

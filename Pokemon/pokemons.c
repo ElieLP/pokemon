@@ -21,7 +21,7 @@ coordonnes genPokemon(char** CARTE, DIM dim)
     return coord;
 }
 
-pokemon* typing()
+pokemon* typing(int *taille)
 {
     pokemon *liste;
     int i=0,j;
@@ -47,7 +47,6 @@ pokemon* typing()
     for (j=0;j<i;j++) {
         char** tokens;
         tab[j][ strlen(tab[j]) - 1 ] = '\0'; // supprime le \n
-        printf("[%s]\n\n", tab[j]);
 
         tokens = str_split(tab[j], ' ');
 
@@ -57,7 +56,6 @@ pokemon* typing()
             for (k = 0; *(tokens + k); k++)
             {
                 pokemon[j][k]=*(tokens + k);
-                printf("[%s]\n", *(tokens + k));
             }
             printf("\n");
             free(tokens);
@@ -70,8 +68,8 @@ pokemon* typing()
         liste[j].element = pokemon[j][2];
         liste[j].force = atoi(pokemon[j][3]);
         liste[j].pv = atoi(pokemon[j][4]);
-        //printf("%d %s %s %d %d ",liste[j].id,liste[j].nom,liste[j].element,liste[j].force,liste[j].pv);
         printf("\n");
     }
+    *taille = j;
     return liste;
 }
