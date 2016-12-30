@@ -96,7 +96,7 @@ pokemon menuPokemon(){
         return pokemonsJoueur[choix];
     } else if (choix <= 0) {
         system("cls");return pokemonsJoueur[idPokJoueur];
-    } else if (pokemonsJoueur[choix].pv<=0){ printf("Vous ne pouvez pas choisir ce Pokemon\n");Sleep(1500);system("cls");return pokemonsJoueur[idPokJoueur];
+    } else if (pokemonsJoueur[choix].pv<=0){ printf("Vous ne pouvez pas choisir ce Pokemon\n");Sleep(1500);system("cls");menuPokemon();
     } else {system("cls");return pokemonsJoueur[idPokJoueur];}
 }
 
