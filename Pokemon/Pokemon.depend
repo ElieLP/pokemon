@@ -1,22 +1,24 @@
 # depslib dependency file v1.0
-1483051521 source:c:\users\monpc\documents\projet\pokemon\pokemon\main.c
+1483059496 source:c:\users\monpc\documents\projet\pokemon\pokemon\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	"Carte.h"
 	<time.h>
 
-1483050746 source:c:\users\monpc\documents\projet\pokemon\pokemon\carte.c
+1483065316 source:c:\users\monpc\documents\projet\pokemon\pokemon\carte.c
 	<stdio.h>
 	<stdlib.h>
 	"Carte.h"
+	<time.h>
+	<windows.h>
 
 1482449515 c:\users\monpc\documents\projet\pokemon\pokemon\carte.c
 	<stdio.h>
 	<stdlib.h>
 	"Carte.h"
 
-1483059033 c:\users\monpc\documents\projet\pokemon\pokemon\carte.h
+1483063548 c:\users\monpc\documents\projet\pokemon\pokemon\carte.h
 
 1483059692 source:c:\users\patrick\documents\projet\pokemon\pokemon\carte.c
 	<stdio.h>
@@ -39,7 +41,7 @@
 
 1483066946 c:\users\patrick\documents\projet\pokemon\pokemon\carte.h
 
-1483051521 source:c:\users\monpc\documents\projet\pokemon\pokemon\personnage.c
+1483063548 source:c:\users\monpc\documents\projet\pokemon\pokemon\personnage.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
@@ -122,9 +124,18 @@
 
 1483055880 
 
+<<<<<<< HEAD
 1483058266 source:c:\users\monpc\documents\projet\pokemon\pokemon\combat.c
 	<stdio.h>
 	<stdlib.h>
+=======
+1483063637 source:c:\users\monpc\documents\projet\pokemon\pokemon\combat.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	"Carte.h"
+>>>>>>> f1944428086b17f1ac4971c9b5340f1be146be12
 
 1483058266 7e0dd07caad1018f5c1afce6c3e4762207568
 	"Carte.h"

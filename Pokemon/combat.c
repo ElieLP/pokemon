@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+<<<<<<< HEAD
 #include "Carte.h"
+=======
+>>>>>>> f1944428086b17f1ac4971c9b5340f1be146be12
 #include <windows.h>
+#include "Carte.h"
+
 
 pokemon *pokemons;
 pokemon pokemonsJoueur[256];
@@ -59,6 +64,16 @@ void attaque(pokemon* joueurS,pokemon* iaS)
      Sleep(1000);
      exit(0);
  }
+<<<<<<< HEAD
+=======
+
+
+
+pokemon *pokemons;
+pokemon pokemonsJoueur[256];
+int tailleListe;
+int tailleMenu;
+>>>>>>> f1944428086b17f1ac4971c9b5340f1be146be12
 
 void initPokemons(){
     pokemons = typing(&tailleListe);
