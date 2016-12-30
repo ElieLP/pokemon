@@ -20,13 +20,10 @@ pokemon* typing(int *taille)
     }
     while (fgets(line, sizeof(line), F))
     {
-        printf("%s", line);
         tab[i]=strdup(line);
         i++;
     }
-    printf("%d",i);
     fclose(F);
-    printf("\n");
     /* Sépare chacune des entrées du tableau */
     for (j=0;j<i;j++) {
         char** tokens;
@@ -41,7 +38,6 @@ pokemon* typing(int *taille)
             {
                 pokemon[j][k]=*(tokens + k);
             }
-            printf("\n");
             free(tokens);
         }
     }
@@ -52,7 +48,6 @@ pokemon* typing(int *taille)
         liste[j].element = pokemon[j][2];
         liste[j].force = atoi(pokemon[j][3]);
         liste[j].pv = atoi(pokemon[j][4]);
-        printf("\n");
     }
     *taille = j;
     return liste;

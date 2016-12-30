@@ -15,7 +15,6 @@ char** maping(DIM *dim)
         exit(1);
     }
     fscanf(F,"%d %d ",&dim->lignes,&dim->colonnes);
-    printf("Il y a %d lignes et %d colonnes \n",dim->lignes,dim->colonnes);
     char **M = malloc(dim->lignes*sizeof(char *));
     for(i=0;i<dim->lignes;i++)
     {
@@ -38,7 +37,6 @@ char** maping(DIM *dim)
             b=rand()%dim->colonnes;
         }
         M[b][a] = '*';
-        Sleep(1000);
     }
     fclose(F);
     return M;
