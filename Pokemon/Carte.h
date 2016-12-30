@@ -30,7 +30,7 @@ pokemon* typing();
 
 char** maping(DIM *);
 
-void attaque(pokemon joueur,pokemon ia,pokemon* joueurS,pokemon* iaS);
+void attaque(pokemon* ,pokemon* );
 
 void echec();
 
