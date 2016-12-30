@@ -22,10 +22,16 @@ typedef struct
     int pv;
 }pokemon;
 
+
 void genPokemon();
 
 pokemon* typing();
 
 
 char** maping(DIM *);
+
+void attaque(pokemon joueur,pokemon ia,pokemon* joueurS,pokemon* iaS);
+
+void echec();
+
 #endif // CARTE_H_INCLUDED

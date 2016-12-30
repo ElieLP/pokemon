@@ -4,6 +4,8 @@
 #include "Carte.h"
 #include <time.h>
 
+coordonnes collection[256] = {7};
+
 int main()
 {
     initMap();
