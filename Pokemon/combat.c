@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-<<<<<<< HEAD
-#include "Carte.h"
+#include <time.h>
 #include <windows.h>
+#include "Carte.h"
+
 
 void attaque(pokemon joueur,pokemon ia,pokemon* joueurS,pokemon* iaS)
  {
@@ -58,10 +59,8 @@ void attaque(pokemon joueur,pokemon ia,pokemon* joueurS,pokemon* iaS)
      Sleep(1000);
      exit(0);
  }
-=======
-#include <time.h>
-#include <windows.h>
-#include "Carte.h"
+
+
 
 pokemon *pokemons;
 pokemon pokemonsJoueur[256];
@@ -115,4 +114,3 @@ void demarrerCombat(){
     printf("\nVous prenez la fuite...");
     Sleep(1000);
 }
->>>>>>> af396ffcb17b234d8d1ecdb8d8f807e05a36bdb8

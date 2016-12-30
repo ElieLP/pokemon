@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Carte.h"
+#include <time.h>
+#include <windows.h>
 
 
 char** maping(DIM *dim)
@@ -24,6 +26,19 @@ char** maping(DIM *dim)
             printf(" ");
         }
         fgetc(F);
+    }
+    int a,b=0;
+    srand(time(NULL));
+    for(i=0;i<3;i++)
+    {
+        a=b=0;
+        while((M[b][a] == '#') || (M[b][a] == 'X'))
+        {
+            a=rand()%dim->lignes;
+            b=rand()%dim->colonnes;
+        }
+        M[b][a] = '*';
+        Sleep(1000);
     }
     fclose(F);
     return M;
