@@ -76,13 +76,14 @@
 
 1483049744 c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\carte.h
 
-1483050349 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\main.c
+1483052204 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	"Carte.h"
+	<time.h>
 
-1483050578 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\personnage.c
+1483052204 source:c:\users\bulle.pallardy\documents\projet\pokemon\pokemon\personnage.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>

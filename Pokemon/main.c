@@ -9,6 +9,7 @@ coordonnes collection[256] = {7};
 int main()
 {
     initMap();
+    initPokemons();
     int x,y;  // position joueur
     int touche;
     x = y = 1;
@@ -17,7 +18,7 @@ int main()
     {
         Afficher(x,y);
         srand(time(NULL));
-        if(rand()%10==1){genPokemon();}
+        if(rand()%3==1){genPokemon();}
         touche = getch();
         switch(touche)
         {
