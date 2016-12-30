@@ -20,6 +20,8 @@
 
 *.depend  
 *.layout  
+*.o
+*.exe
 
 ############  
 ## Windows  

@@ -23,7 +23,14 @@ typedef struct
 }pokemon;
 
 
+void genPokemon();
 
-coordonnes genPokemon(char**,DIM);
+pokemon* typing();
+
 char** maping(DIM *);
+
+void attaque(pokemon joueur,pokemon ia,pokemon* joueurS,pokemon* iaS);
+
+void echec();
+
 #endif // CARTE_H_INCLUDED

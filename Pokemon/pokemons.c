@@ -5,23 +5,7 @@
 #include <time.h>
 #include <assert.h>
 
-coordonnes genPokemon(char** CARTE, DIM dim)
-{
-    int a,b;
-    coordonnes coord;
-    srand(time(NULL));
-    a=0;
-    b=0;
-    while((CARTE[b][a] == '#') || (CARTE[b][a] == 'X')){
-        a = rand()%dim.colonnes;
-        b = rand()%dim.lignes;
-    }
-        coord.x = a;
-        coord.y = b;
-        return coord;
-}
-
-struct pokemon* typing()
+pokemon* typing(int *taille)
 {
     pokemon *liste;
     int i=0,j;
@@ -47,7 +31,6 @@ struct pokemon* typing()
     for (j=0;j<i;j++) {
         char** tokens;
         tab[j][ strlen(tab[j]) - 1 ] = '\0'; // supprime le \n
-        printf("[%s]\n\n", tab[j]);
 
         tokens = str_split(tab[j], ' ');
 
@@ -57,7 +40,6 @@ struct pokemon* typing()
             for (k = 0; *(tokens + k); k++)
             {
                 pokemon[j][k]=*(tokens + k);
-                printf("[%s]\n", *(tokens + k));
             }
             printf("\n");
             free(tokens);
@@ -70,8 +52,8 @@ struct pokemon* typing()
         liste[j].element = pokemon[j][2];
         liste[j].force = atoi(pokemon[j][3]);
         liste[j].pv = atoi(pokemon[j][4]);
-        printf("%d %s %s %d %d ",liste[j].id,liste[j].nom,liste[j].element,liste[j].force,liste[j].pv);
         printf("\n");
     }
+    *taille = j;
     return liste;
 }

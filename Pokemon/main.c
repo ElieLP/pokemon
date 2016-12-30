@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include "Carte.h"
+#include <time.h>
 
 coordonnes collection[256] = {7};
 
@@ -15,6 +16,8 @@ int main()
     while(touche!='q')
     {
         Afficher(x,y);
+        srand(time(NULL));
+        if(rand()%10==1){genPokemon();}
         touche = getch();
         switch(touche)
         {
