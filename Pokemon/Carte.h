@@ -26,5 +26,6 @@ void genPokemon();
 
 pokemon* typing();
 
+
 char** maping(DIM *);
 #endif // CARTE_H_INCLUDED

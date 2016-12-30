@@ -50,7 +50,8 @@ void deplacer(int* x,int* y,int vx,int vy)
     {
         return;
     } else if (CARTE[*x+vx][*y+vy]=='*') {
-        if (demarrerCombat()==false);
+        demarrerCombat();
+        CARTE[*x+vx][*y+vy]=' ';
         (*x)+=vx;
         (*y)+=vy;
     } else {

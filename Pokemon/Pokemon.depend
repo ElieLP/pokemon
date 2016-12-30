@@ -22,20 +22,21 @@
 	<stdlib.h>
 	"Carte.h"
 
-1482687621 source:c:\users\patrick\documents\projet\pokemon\pokemon\main.c
+1483055880 source:c:\users\patrick\documents\projet\pokemon\pokemon\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	"Carte.h"
+	<time.h>
 
-1482541497 source:c:\users\patrick\documents\projet\pokemon\pokemon\personnage.c
+1483056924 source:c:\users\patrick\documents\projet\pokemon\pokemon\personnage.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	<conio.h>
 	"Carte.h"
 
-1482684014 c:\users\patrick\documents\projet\pokemon\pokemon\carte.h
+1483056191 c:\users\patrick\documents\projet\pokemon\pokemon\carte.h
 
 1483044301 source:c:\users\monpc\documents\projet\pokemon\pokemon\personnage.c
 	<stdio.h>
@@ -52,11 +53,9 @@
 	"Carte.h"
 	<time.h>
 
-1482687593 source:c:\users\patrick\documents\projet\pokemon\pokemon\pokemons.c
+1483055880 source:c:\users\patrick\documents\projet\pokemon\pokemon\pokemons.c
 	<stdio.h>
 	<stdlib.h>
-	<windows.h>
-	<conio.h>
 	<string.h>
 	"Carte.h"
 	<time.h>
@@ -102,4 +101,16 @@
 	<stdlib.h>
 	<string.h>
 	<assert.h>
+
+1483055880 source:c:\users\patrick\documents\projet\pokemon\pokemon\utils.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+
+1483055880 source:c:\users\patrick\documents\projet\pokemon\pokemon\combat.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"Carte.h"
 
