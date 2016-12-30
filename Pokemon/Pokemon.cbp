@@ -36,6 +36,9 @@
 		</Unit>
 		<Unit filename="Carte.h" />
 		<Unit filename="Map.txt.txt" />
+		<Unit filename="combat.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -20,10 +20,12 @@
 
 1483063548 c:\users\monpc\documents\projet\pokemon\pokemon\carte.h
 
-1483059692 source:c:\users\patrick\documents\projet\pokemon\pokemon\carte.c
+1483068091 source:c:\users\patrick\documents\projet\pokemon\pokemon\carte.c
 	<stdio.h>
 	<stdlib.h>
 	"Carte.h"
+	<time.h>
+	<windows.h>
 
 1483059692 source:c:\users\patrick\documents\projet\pokemon\pokemon\main.c
 	<stdio.h>
@@ -99,7 +101,7 @@
 	<time.h>
 	<assert.h>
 
-1483043682 D
+1483055880 D
 
 1483044301 source:c:\users\monpc\documents\projet\pokemon\pokemon\utils.c
 
@@ -117,25 +119,27 @@
 	<string.h>
 	<assert.h>
 
-1483055880 source:c:\users\patrick\documents\projet\pokemon\pokemon\combat.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-
-1483055880 
-
-<<<<<<< HEAD
-1483058266 source:c:\users\monpc\documents\projet\pokemon\pokemon\combat.c
-	<stdio.h>
-	<stdlib.h>
-=======
-1483063637 source:c:\users\monpc\documents\projet\pokemon\pokemon\combat.c
+1483073030 source:c:\users\patrick\documents\projet\pokemon\pokemon\combat.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<windows.h>
 	"Carte.h"
->>>>>>> f1944428086b17f1ac4971c9b5340f1be146be12
+	<strings.h>
+	<stdbool.h>
+
+1483058266 
+
+1483063637 source:c:\users\monpc\documents\projet\pokemon\pokemon\combat.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	"Carte.h"
+
+1483063637 44428086b17f1ac4971c9b5340f1be146be12
 
 1483058266 7e0dd07caad1018f5c1afce6c3e4762207568
 	"Carte.h"
