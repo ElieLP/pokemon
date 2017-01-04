@@ -20,6 +20,12 @@ void attaque(pokemon* joueurS,pokemon* iaS)
          printf("C'est tres efficace\n");
          printf("L'attaque inflige %d points de degats. Il reste %d points de vie a %s\n",2+joueurS->force,iaS->pv,iaS->nom);
      }
+    if((strcmp(joueurS->element,"Tenebre") == 0) && (strcmp(iaS->element,"Psy")==0))
+     {
+         iaS->pv = iaS->pv - (2 + joueurS->force);
+         printf("C'est tres efficace\n");
+         printf("L'attaque inflige %d points de degats. Il reste %d points de vie a %s\n",2+joueurS->force,iaS->pv,iaS->nom);
+     }
      else if((strcmp(joueurS->element,"Eau") == 0) && (strcmp(iaS->element,"Feu")==0))
      {
          iaS->pv = iaS->pv - (2 + joueurS->force);
